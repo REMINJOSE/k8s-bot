@@ -1,0 +1,11 @@
+services:
+  discord-opsbot:
+    build: .
+    container_name: discord-opsbot
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env
+    volumes:
+      - /root/.kube/config:/root/.kube/config:ro
+      - /root/.config/k8sgpt:/root/.config/k8sgpt:rw
