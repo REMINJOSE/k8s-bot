@@ -41,6 +41,10 @@ K8s Bot brings together Kubernetes environment visibility and conversational wor
 
 <img width="1600" height="831" alt="K8s Bot workflow summary" src="https://github.com/user-attachments/assets/4ac04eef-d3d8-45a7-bd69-3bb327cee9a9" />
 
+### Architecture and workflow overview
+
+<img width="2528" height="1696" alt="K8s Bot architecture and workflow overview" src="https://github.com/user-attachments/assets/58363810-7950-4e41-ad05-2af64cc64b8a" />
+
 ## Use Cases
 
 - troubleshooting failed deployments
