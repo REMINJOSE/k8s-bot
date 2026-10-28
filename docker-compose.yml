@@ -7,5 +7,9 @@ services:
     env_file:
       - .env
     volumes:
+      # Mount Kubernetes config so kubectl works inside the container
       - /root/.kube/config:/root/.kube/config:ro
+      # Mount k8sgpt config
       - /root/.config/k8sgpt:/root/.config/k8sgpt:rw
+      # Mount Docker socket so the container can inspect and restart local LXC Docker containers
+      - /var/run/docker.sock:/var/run/docker.sock:rw
